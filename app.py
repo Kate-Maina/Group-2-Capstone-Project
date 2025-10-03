@@ -1,13 +1,17 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
-app = Flask(__name__)
-CORS(app)
 import joblib
 import numpy as np
 import pandas as pd
 from datetime import datetime
 
 app = Flask(__name__)
+
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
+    return response
 
 # Load the bundle (model was saved as a dictionary)
 bundle = joblib.load('random_forest.pkl')
