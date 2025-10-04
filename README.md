@@ -4,7 +4,7 @@
 
 ## Project Collaboration
 
-Project coordination was managed through [**Trello**] (https://trello.com/invite/b/68c2f4e834cedcd2b23b471f/ATTIef82752897087fa7fa12988a7fcf9426B0D613E7/group-2-phase-5-capstone-project), which acted as our central hub for organizing workstreams and tracking progress. The platform enabled the team to:
+Project coordination was managed through [Trello](https://trello.com/invite/b/68c2f4e834cedcd2b23b471f/ATTIef82752897087fa7fa12988a7fcf9426B0D613E7/group-2-phase-5-capstone-project), which acted as our central hub for organizing workstreams and tracking progress. The platform enabled the team to:
 
 - Consolidate notes, analysis updates, and reference materials in one shared space
 - Record meeting summaries and document key decisions for future reference
