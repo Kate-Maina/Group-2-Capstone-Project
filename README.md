@@ -6,26 +6,29 @@
 
 Follow these steps to set up and run the project locally:
 
+### 1. Clone the repository
 ```bash
-# 1. Clone the repository
 git clone https://github.com/Kate-Maina/Group-2-Capstone-Project.git
 cd Group-2-Capstone-Project
+```
 
 # 2. Create a virtual environment
+```bash
 python -m venv venv
-
+```
 # 3. Activate the virtual environment
-# On Mac/Linux:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
-
+```bash
+source venv/bin/activate # On Mac/Linux:
+venv\Scripts\activate # On Windows:
+```
 # 4. Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 # 5. Launch Jupyter Notebook
+```bash
 jupyter notebook
-
+```
 
 
 ## Project Collaboration
