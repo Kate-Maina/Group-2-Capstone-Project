@@ -104,7 +104,7 @@ EDA revealed the following insights:
 - **Sales seasonality**: Weekly sales showed consistent peaks during festive and back-to-school periods.
 - **Shop performance differences**: 
 - Urban branches (e.g., Gikomba, Warehouse) had higher but more volatile sales. The **Warehouse** store dominates in total revenue, transactions, and quantity sold, indicating it may serve as a central distribution hub.
-- Other shops like **Gikomba**, **Eldoret**, and **Kisumu** follow as strong retail performers, while smaller outlets like **Kitale** and **NAVULUKI** show lower sales activity. 
+- Other shops like **Gikomba**, **Eldoret**, and **Kisumu** follow as strong retail performers, while smaller outlets like **Kitale** and **Nanyuki** show lower sales activity. 
 - **Category trends**: Certain categories like Clothing and Footwear contributed the majority of revenue.
 - **Sales gaps**: Some branches reported missing or zero sales on specific days, likely due to store closures.
 - A clear **positive relationship** exists between transaction count and total revenue, highlighting the importance of increasing sales volume to drive revenue growth.
