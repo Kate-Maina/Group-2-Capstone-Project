@@ -24,6 +24,7 @@ Project coordination was managed through [Trello](https://trello.com/invite/b/68
 # Business Understanding
 
 Thrift store chains in Kenya face significant challenges in managing inventory, staffing, and cash flow due to reliance on manual, reactive sales planning. Without reliable forecasts, managers often depend on intuition to make restocking and staffing decisions, leading to either overstocking or stockouts that affect profitability.
+*Can predictive modeling provide more accurate and actionable sales forecasts than traditional intuition-based planning methods used by thrift store managers?*
 
 ## Problem Statement
 
@@ -110,14 +111,17 @@ Several forecasting models were developed and evaluated, including:
 
 ### Results (Summary)
 
-| Model           | RMSE   | R² Score | Notes                                     |
-|----------------|--------|----------|-------------------------------------------|
-| Baseline (Naïve)| High   | Low      | Reference model                           |
-| SARIMA          | Moderate | Fair   | Captured trend but not irregular spikes   |
-| Prophet         | Moderate | Fair   | Captured seasonality, less responsive     |
-| Random Forest   | 1.28M  | 0.59     | Best performance overall                  |
-| LSTM            | 1.29M  | 0.58     | Strong temporal learning, close second    |
-| XGBoost         | Slightly higher RMSE | 0.55 | Good generalization              |
+| Model                          | MAE            | RMSE         | R² Score | Notes                                               |
+|-------------------------------|----------------|--------------|----------|-----------------------------------------------------|
+| Random Forest (FE, pooled)    | 585,788        | 1,279,279    | 0.5868   | Best overall performance                            |
+| LSTM (pooled + cal + shop)    | 624,316        | 1,285,251    | 0.5829   | Strong temporal learning, close second              |
+| Moving Average (4)            | 612,119        | 1,309,287    | 0.5672   | Simple baseline with decent trend capture           |
+| GradientBoosting (FE, pooled) | 604,400        | 1,372,581    | 0.5243   | Good performance, slightly behind Random Forest     |
+| SARIMA (1,1,1)x(1,1,1,52)     | 703,284        | 1,411,438    | 0.4970   | Captures trend but struggles with irregular spikes  |
+| Prophet (weekly + yearly)     | 679,648        | 1,411,875    | 0.4967   | Models seasonality, less responsive to fluctuations |
+| SVR (FE, pooled)              | 723,997        | 1,460,451    | 0.4615   | Moderate performance, weaker generalization         |
+| Naive (last value)            | 995,755        | 2,218,043    | -0.2421  | Baseline reference model                            |
+
 
 The **Random Forest** model achieved the best balance between accuracy, interpretability, and computational efficiency. It was selected as the final model for deployment.
 
@@ -183,3 +187,12 @@ This project demonstrates how data science and predictive modeling can transform
 - **Git**, **Trello** (collaboration and version control)
 - **Tableau** (dashboarding / visualization)
 
+---
+
+# Final Product
+
+The following resources provide an overview of our project's final deliverables:
+| Resource           | Description   | Access Link | 
+|----------------|--------|----------|
+| Deployed App| API endpoint to prediction model   | [Sales Forecasting App](https://sheltered-eyrie-97374-879898d106db.herokuapp.com/)   |
+| Tableau Dashboard  | Interactive dashboard highlighting key insights and trends | [Dashboard](https://public.tableau.com/app/profile/joan.njuki/viz/KenyaSecondHandRetailPerformanceDashboard/Performanceanalysisdashboard1?publish=yes)   | 
