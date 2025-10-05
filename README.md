@@ -88,10 +88,26 @@ To prepare the dataset for modeling:
 
 EDA revealed the following insights:
 
+### Top Products by Sales
+
+![Top 20 Products by Total Sales](images/eda-1.png)
+
+- The highest-performing products are dominated by **children’s and winter wear**, such as *Children Rummage*, *Winter Jackets*, and *Hooded Sweatshirts*.  
+- This indicates strong demand for **seasonal and affordable clothing items**, aligning with the thrift store’s customer base.  
+- Product categories like *Mens T-shirts*, *Ladies Pants*, and *Curtains* also show notable contributions, reflecting a **balanced mix between apparel and household items**.  
+- These insights highlight the need to **prioritize stock availability** in top-selling product lines, especially during high-demand seasons.
+
+
+![Store Performance Analysis](images/eda-2.png)
+
+
 - **Sales seasonality**: Weekly sales showed consistent peaks during festive and back-to-school periods.
-- **Shop performance differences**: Urban branches (e.g., Gikomba, Warehouse) had higher but more volatile sales.
+- **Shop performance differences**: 
+- Urban branches (e.g., Gikomba, Warehouse) had higher but more volatile sales. The **Warehouse** store dominates in total revenue, transactions, and quantity sold, indicating it may serve as a central distribution hub.
+- Other shops like **Gikomba**, **Eldoret**, and **Kisumu** follow as strong retail performers, while smaller outlets like **Kitale** and **NAVULUKI** show lower sales activity. 
 - **Category trends**: Certain categories like Clothing and Footwear contributed the majority of revenue.
 - **Sales gaps**: Some branches reported missing or zero sales on specific days, likely due to store closures.
+- A clear **positive relationship** exists between transaction count and total revenue, highlighting the importance of increasing sales volume to drive revenue growth.
 
 These insights informed both the modeling strategy and feature selection process.
 
