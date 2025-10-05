@@ -211,4 +211,4 @@ The following resources provide an overview of our project's final deliverables:
 | Resource           | Description   | Access Link | 
 |----------------|--------|----------|
 | Deployed App| API endpoint to prediction model   | [Sales Forecasting App](https://thrift-sales-predictor.netlify.app/)   |
-| Tableau Dashboard  | Interactive dashboard highlighting key insights and trends | [Dashboard](https://public.tableau.com/app/profile/joan.njuki/viz/KenyaSecondHandRetailPerformanceDashboard/Performanceanalysisdashboard1?publish=yes)   | 
+| Tableau Dashboard  | Interactive dashboard highlighting key insights and trends | [Dashboard](https://public.tableau.com/app/profile/rita.nyaga/viz/Book1_17596934127490/Dashboard1?publish=yes)   | 
