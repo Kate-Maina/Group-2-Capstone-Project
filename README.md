@@ -2,6 +2,32 @@
 
 ![Thrift Store](images/QuillBot-generated-image-2.png)
 
+## ⚙️ Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Kate-Maina/Group-2-Capstone-Project.git
+cd Group-2-Capstone-Project
+
+# 2. Create a virtual environment
+python -m venv venv
+
+# 3. Activate the virtual environment
+# On Mac/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Launch Jupyter Notebook
+jupyter notebook
+
+
+
 ## Project Collaboration
 
 Project coordination was managed through [Trello](https://trello.com/invite/b/68c2f4e834cedcd2b23b471f/ATTIef82752897087fa7fa12988a7fcf9426B0D613E7/group-2-phase-5-capstone-project), which acted as our central hub for organizing workstreams and tracking progress. The platform enabled the team to:
