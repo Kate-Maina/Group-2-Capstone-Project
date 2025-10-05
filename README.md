@@ -210,5 +210,5 @@ This project demonstrates how data science and predictive modeling can transform
 The following resources provide an overview of our project's final deliverables:
 | Resource           | Description   | Access Link | 
 |----------------|--------|----------|
-| Deployed App| API endpoint to prediction model   | [Sales Forecasting App](https://sheltered-eyrie-97374-879898d106db.herokuapp.com/)   |
+| Deployed App| API endpoint to prediction model   | [Sales Forecasting App](https://thrift-sales-predictor.netlify.app/)   |
 | Tableau Dashboard  | Interactive dashboard highlighting key insights and trends | [Dashboard](https://public.tableau.com/app/profile/joan.njuki/viz/KenyaSecondHandRetailPerformanceDashboard/Performanceanalysisdashboard1?publish=yes)   | 
