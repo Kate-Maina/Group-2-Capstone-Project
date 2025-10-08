@@ -178,7 +178,7 @@ The chosen Random Forest model was serialized and integrated into a forecasting 
 
 - View predicted weekly sales for each store.
 - Compare actual vs. predicted performance.
-- Download forecasts for planning purposes.
+
 
 # Conclusion
 
